@@ -229,7 +229,7 @@ KBUILD_CPPFLAGS += $(patsubst %,-I$(srctree)/%include,$(machdirs) $(platdirs))
 endif
 
 # OMAP-Samsung custom build-configurations
--include arch/arm/mach-omap2/samsung.mk
+-include $(srctree)/arch/arm/mach-omap2/samsung.mk
 
 export	TEXT_OFFSET GZFLAGS MMUEXT
 

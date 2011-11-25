@@ -202,7 +202,7 @@ obj-$(CONFIG_MACH_SBC3530)		+= board-omap3stalker.o \
 					   hsmmc.o
 
 ## [[BEGIN>>> OMAP-Samsung Specific Configurations
-					   
+
 obj-$(CONFIG_MACH_OMAP_SAMSUNG)		+= omap3-gptimer12.o \
 					   omap34xx-padext.o \
 					   sec_common.o \

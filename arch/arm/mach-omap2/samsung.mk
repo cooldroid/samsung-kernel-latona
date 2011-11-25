@@ -25,7 +25,7 @@
 
 ifeq ($(machine-y),omap2)
 
-omap_samsung_plat = arch/arm/plat-$(word 1,$(plat-y))/
+omap_samsung_plat = $(srctree)/arch/arm/plat-$(word 1,$(plat-y))/
 omap_samsung_plat_inc_path = $(omap_samsung_plat)include
 
 ifdef CONFIG_SAMSUNG_HW_EMU_BOARD

@@ -347,7 +347,7 @@ LINUXINCLUDE    := -I$(srctree)/arch/$(hdr-arch)/include -Iinclude \
                    $(if $(KBUILD_SRC), -I$(srctree)/include) \
                    -include include/generated/autoconf.h
 
--include samsung/sec_include.mk
+-include $(srctree)/samsung/sec_include.mk
 
 KBUILD_CPPFLAGS := -D__KERNEL__
 
